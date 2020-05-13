@@ -20,4 +20,4 @@ O My GitHub é uma aplicação que visa a visualização rápida e fácil de dad
 Solicitações pull são bem-vindas. Para grandes mudanças, abra uma uma Issue primeiro para discutirmos o que você gostaria de mudar.
 
 ## Licença
-[MIT](https://github.com/caiodeambrosio/my-github-api/blob/master/LICENSE.txt)
+[MIT](https://github.com/caiodeambrosio/my-github-api/blob/master/LICENSE)
