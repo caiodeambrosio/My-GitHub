@@ -1,5 +1,7 @@
 const express = require("express");
 const cors = require("cors");
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("./swagger.config");
 
 const { uuid } = require("uuidv4");
 
@@ -9,6 +11,8 @@ app.use(express.json());
 app.use(cors());
 
 const repositories = [];
+
+app.use("/documentation", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.get("/repositories", (request, response) => {
   return response.json(repositories);
