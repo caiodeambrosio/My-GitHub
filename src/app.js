@@ -41,7 +41,7 @@ app.put("/repositories/:id", (request, response) => {
   );
 
   if (repositoryIndex < 0) {
-    return response.status(400).json({ error: "Projeto não encontrado" });
+    return response.status(400).json({ error: "Repositório não encontrado" });
   }
 
   repositories[repositoryIndex] = {
@@ -63,7 +63,7 @@ app.delete("/repositories/:id", (request, response) => {
   );
 
   if (repositoryIndex < 0) {
-    return response.status(400).json({ error: "Projeto não encontrado" });
+    return response.status(400).json({ error: "Repositório não encontrado" });
   }
 
   repositories.splice(repositoryIndex, 1);
@@ -78,7 +78,7 @@ app.post("/repositories/:id/like", (request, response) => {
   );
 
   if (repositoryIndex < 0) {
-    return response.status(400).json({ error: "Projeto não encontrado" });
+    return response.status(400).json({ error: "Repositório não encontrado" });
   }
 
   repositories[repositoryIndex].likes += 1;
